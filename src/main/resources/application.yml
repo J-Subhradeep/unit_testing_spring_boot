@@ -1,0 +1,21 @@
+server:
+  port: 8081
+spring:
+  datasource:
+    name: pg_database
+    username: postgres
+    password: admin
+    url: jdbc:postgresql://localhost:5432/unit_testing
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    properties:
+      hibernate:
+        format-sql: true
+    hibernate:
+      ddl-auto: create
+
+    database-platform: org.hibernate.dialect.PostgreSQL95Dialect
+    show-sql: true
+
+  application:
+    name: UNIT-TESTING
